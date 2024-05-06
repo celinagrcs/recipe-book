@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #EEEBDD;
+}
+
+.ilustration{
+    width: 200px;
+    z-index: -1;
+    position: absolute;
+    opacity: 80%;
+}
+
+.ilustration-1{
+    top: 20%;
+}
+
+.ilustration-2{
+    top: 150%;
+    left: 0;
+    margin: 2rem;
+}
+
+.ilustration-3{
+    top: 65%;
+    right: 0;
+    margin: 2rem;
+}
+
+.ilustration-4{
+    right: 0;
+    top: 190%;
+    margin: 2rem;
+}
+
+header i{
+    font-size: 30px;
+    margin: 40px
+}
+
+button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+/* Recipes */
+.recipe-details {
+    display: table;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.recipe-details h2{
+    padding: 15px 30px;
+    text-align: center;
+    color: #630000;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.recipe-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 95px;
+}
+
+.recipe-details p {
+    margin-bottom: 20px;
+}
+
+.recipe-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #630000;
+}
+
+.recipe-details ul,
+.recipe-details ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.recipe-details li {
+    margin-bottom: 10px;
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+    .ilustration-1 {
+        width: 150px;
+        opacity: 20%;
+        top: 5%;
+        right: 30%;
+    }
+    .recipe-details {
+        padding: 10px;
+    }
+    .recipe-details h2 {
+        font-size: 30px;
+    }
+    .recipe-details img {
+        margin-left: 0;
+    }
+    .ilustration-3,
+    .ilustration-4 {
+        display: block;
+        opacity: 20%;
+    }
+    .ilustration-2{
+        display: none;
+    }
+}
+
+@media (min-width: 655px) and (max-width: 1024px) {
+
+    .recipe-details img{
+        max-width: 70%;
+    }
+
+    .ilustration{
+        opacity: 40%;
+    }
+    .ilustration-1 {
+        width: 180px;
+        top: 10%
+    }
+    .ilustration-3{
+        display: block;
+    }
+    .ilustration-2 {
+        display: block;
+        top: 110%;
+    }
+    .ilustration-4{
+        top: 130%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #721818; 
+    border-radius: 6px;
+}

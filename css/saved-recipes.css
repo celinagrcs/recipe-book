@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #EEEBDD;
+    background-image: radial-gradient(#630000 2px, #EEEBDD 2px);
+    background-size: 40px 40px;
+}
+
+/* Header */
+header h1{
+    color: #630000;
+    font-family: "Platypi", sans-serif;
+    display: table;
+    margin: 0 auto;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    background: #EEEBDD;
+    width: 400px;
+}
+
+header i{
+    font-size: 30px;
+    margin: 40px;
+    background: #EEEBDD;
+}
+
+/* Saved recipes */
+.saved-recipes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.saved-recipes article {
+    background: #EEEBDD;
+    border: 2px solid #630000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    max-width: 500px;
+    margin: 30px;
+    transition:  transform 0.5s;
+}
+
+.saved-recipes a{
+    text-decoration: none;
+    color: #630000;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.saved-recipes a:hover{
+    text-decoration:underline;
+}
+
+.saved-recipes article:hover{
+    transform: translateY(-10px);
+}
+
+.saved-recipes button{
+    border: none;
+    background: transparent;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.saved-recipes img{
+    max-width: 100%;
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    header i {
+        margin: 30px;
+        padding: 10px;
+    }
+
+    .saved-recipes article {
+        max-width: 90%; 
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 655px) and (max-width: 1024px) {
+    .saved-recipes article {
+        max-width: 55%; 
+    }
+    .saved-recipes a{
+        font-size: 18px;
+    }
+    .saved-recipes i{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .saved-recipes article {
+        max-width: 30%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #721818; 
+    border-radius: 6px;
+}
